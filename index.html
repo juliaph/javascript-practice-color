@@ -42,8 +42,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     
     <script>
+        console.log(document.body.attributes)
+       
     function changeColor() {
-        document.body.style.backgroundColor = "purple";
+        if(document.body.style.backgroundColor === "orange"|| document.body.style.backgroundColor === "white"){
+            document.body.style.backgroundColor = "purple";
+        } else if(document.body.style.backgroundColor === "purple"|| document.body.style.backgroundColor === "white"){
+            document.body.style.backgroundColor = "orange";
+        } else {
+            document.body.style.backgroundColor ="white";
+        }
+        
     }
     </script>
 
